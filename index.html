@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulation Point Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Articulation Point Visualizer</h1>
+        <p>Click on the canvas to add nodes. Use controls to create edges and find articulation points.</p>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <div class="btn-group">
+                <!-- <button id="add-node-btn">Add Node</button> -->
+                <button id="add-edge-btn">Create Edge</button>
+                <!-- <button id="connect-btn">Connect Selected Nodes</button> -->
+                <button id="clear-btn">Clear Graph</button>
+                <button id="find-ap-btn">Find Articulation Points</button>
+            </div>
+
+            <!-- <div class="edge-selector">
+                <div class="selector-header">
+                    <h3>Create Edge Between:</h3>
+                </div>
+                <div class="selector-container">
+                    <div class="selector">
+                        <label for="from-node">From:</label>
+                        <select id="from-node"></select>
+                    </div>
+                    <div class="selector">
+                        <label for="to-node">To:</label>
+                        <select id="to-node"></select>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="info-panel">
+                <h3>Graph Information</h3>
+                <div class="info-item">
+                    <span>Nodes:</span>
+                    <span id="node-count">0</span>
+                </div>
+                <div class="info-item">
+                    <span>Edges:</span>
+                    <span id="edge-count">0</span>
+                </div>
+                <div class="articulation-points">
+                    <h3>Articulation Points:</h3>
+                    <div id="ap-list"></div>
+                </div>
+            </div>
+            
+            <!-- <div class="instructions">
+                <h3>How to use:</h3>
+                <ol>
+                    <li>Add nodes by clicking on the canvas or using the "Add Node" button</li>
+                    <li>To create an edge: select two nodes from dropdowns and click "Connect Selected Nodes"</li>
+                    <li>Or click "Create Edge" and then click on two nodes on the canvas</li>
+                    <li>Click "Find Articulation Points" to highlight critical nodes</li>
+                </ol>
+            </div> -->
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="graphCanvas" width="800" height="500"></canvas>
+            <div id="status-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="explanation">
+            <h2>What are Articulation Points?</h2>
+            <p>Articulation points (or cut vertices) are nodes in a graph that, when removed, increase the number of connected components in the graph. In other words, they are critical points for maintaining connectivity.</p>
+        </div>
+        <div class="credit">
+            <p>Created as a College Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
