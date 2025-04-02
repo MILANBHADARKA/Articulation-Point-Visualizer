@@ -72,8 +72,6 @@ button:disabled {
     box-shadow: none;
 }
 
-/* Removed add-node-btn styles since it's commented out */
-
 button#clear-btn {
     background-color: #dc3545;
 }
@@ -89,10 +87,6 @@ button#find-ap-btn {
 button#find-ap-btn:hover {
     background-color: #e76b00;
 }
-
-/* Removed connect-btn styles since it's commented out */
-
-/* Removed edge-selector styles since it's commented out */
 
 .info-panel {
     background-color: white;
@@ -116,8 +110,6 @@ button#find-ap-btn:hover {
     font-size: 1.1rem;
     color: #333;
 }
-
-/* Removed instructions styles since it's commented out */
 
 #ap-list {
     min-height: 50px;
@@ -194,7 +186,6 @@ footer {
     opacity: 0.8;
 }
 
-/* For smaller screens */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
