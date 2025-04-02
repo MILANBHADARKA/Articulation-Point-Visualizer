@@ -1,7 +1,7 @@
 # Deployment
 - Link : https://milanbhadarka.github.io/ArticulationPointVisualizer/
 
-here is an image
+**Here is an image**
 ![image](https://github.com/user-attachments/assets/5024be55-68bd-4017-b3af-bce5ddffa2d6)
 
 # Articulation Point Visualizer
